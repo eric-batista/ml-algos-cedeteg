@@ -67,6 +67,25 @@ lasso.score(X_test,y_test)
 
 print(f'Mean_Squared_ERROR: {mean_squared_error(np.array(y_test), y_predict_lasso)}')
 
+
+###Melhorando o cofator lambda para poder treinar o modelo com maior eficiencia###
+lambdas = [0.00001,0.0001,0.001,0.01,0.5,1]
+
+for i in range(len(lambdas)):
+    model = Lasso(alpha=lambdas[i])
+    model.fit(X,y)
+    score = model.score(X,y)
+    score.append(score)
+#########################################
+
+#plt.scatter(lambdas,score)
+#plt.xlabel('Lambda');
+#plt.ylabel('Score');
+#plt.xscale('log');
+#plt.xlim([len-5,10]);
+#################################
+
+
 #########################################
 #### se metaTrader inicializar A conecção #####
 
@@ -111,7 +130,7 @@ def sell():
 
     request = {
         "action": mt.TRADE_ACTION_DEAL,
-        "symbol": "WINQ21",
+        "symbol": "WDO$N",
         "volume": float(1.0),
         "type": mt.ORDER_TYPE_SELL,
         "sl": sl,
@@ -130,7 +149,7 @@ def sell():
 ####################################################
 #### pega os valores do meta trader     #####
 
-last_price = mt.copy_rates_from_pos('WDO$N', mt.TIMEFRAME_D1, 0, 1)
+last_price = mt.copy_rates_from_pos('WDO$N', mt.TIMEFRAME_D1, 0, 1000)
 open_price = last_price[0][1] # Open
 high_price = last_price[0][2] # High
 low_price = last_price[0][3]  # Low
