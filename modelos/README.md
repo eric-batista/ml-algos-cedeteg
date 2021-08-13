@@ -1,3 +1,3 @@
 ---
-## 📊 Pasta destinada para os modelos criados e separadps pelos sprints semanais. 📈⌛
+## 📊 Pasta destinada para os modelos criados e separados pelos sprints semanais. 📈⌛
 ---
