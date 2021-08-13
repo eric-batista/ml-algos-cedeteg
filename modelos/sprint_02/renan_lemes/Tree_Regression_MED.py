@@ -1,3 +1,5 @@
+####importando as blibliotecas####
+
 import pandas as pd
 import numpy as np
 import MetaTrader5 as mt
@@ -6,18 +8,20 @@ from sklearn.tree import DecisionTreeClassifier
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
 
+#### atribuido as variaveis ####
+
 df = pd.read_csv('DI1N_Daily_201801020000_202012300000.csv', delimiter = '\t').rename(columns = {'<DATE>': 'Data', '<OPEN>': 'Open', '<HIGH>': 'High', '<LOW>': 'Low', '<CLOSE>':'Close'}).drop(columns = ['<TICKVOL>', '<VOL>', '<SPREAD>',])
 dt = DecisionTreeClassifier(criterion='gini',random_state=1)
 
-coin = 'DI1$N'
-value = 1000
-serial = mt.TIMEFRAME_D1
+coin = 'DI1$N' ## moeda ##
+value = 1000    ## valor ##
+serial = mt.TIMEFRAME_D1 
 X_data = df[['Open', 'High', 'Low', 'Close']]
 y_data = pd.DataFrame()
 y_data['Close'] = df['Close'].shift(-1) 
 
 y_data = pd.DataFrame()
-
+### metodo de média simples ####
 trade_logic = []
 
 X_data = df[['Open', 'High', 'Low', 'Close']]
@@ -37,7 +41,8 @@ y = X_data['Signal']
 X = X_data.drop('Signal', axis=1)
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.4, random_state=42)
-
+  ############################
+### função de treinar o robo ###
 def Tuning_Traning(X,y):
 
     X_train, X_test, y_train, y_test = train_test_split(X,y,test_size = 0.2,stratify=y,random_state=1)
@@ -56,6 +61,7 @@ def Initialize_MetaTrader():
 
 Initialize_MetaTrader()
 
+##### função de compra #####
 def Buy(coin):
     price = mt.symbol_info_tick(coin).ask
     sl = price - 200.0 * mt.symbol_info(coin).point
@@ -76,6 +82,8 @@ def Buy(coin):
     result = mt.order_send(request)
 
     print(f'OrderSended buy: {result}')
+
+##### função de venda #####
 
 def Sell(coin):
     price = mt.symbol_info_tick(coin).bid
@@ -100,6 +108,8 @@ def Sell(coin):
 
     print(f'OrderSended sell: {result}')   
 
+### pregando os melhores preços ###
+
 def Relative_Position_Market(coin,serial,value):    
     last_price_cands = mt.copy_rates_from_pos(coin,serial,0,value)
     open_price = last_price_cands[0][1]
@@ -111,6 +121,8 @@ def Relative_Position_Market(coin,serial,value):
     return prices
 
 prices = Relative_Position_Market(coin,serial,value)    
+
+#####  Ações do robo  #####
 
 def Robo_Action(coin):
     v_interetion = 8
