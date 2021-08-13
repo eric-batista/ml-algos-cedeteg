@@ -1,3 +1,0 @@
-# Roteiro de estudos
----
-Descricao
