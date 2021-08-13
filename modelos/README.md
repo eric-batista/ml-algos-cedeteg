@@ -1,1 +1,3 @@
-# Pasta destinada para os modelos criados nos sprints separados pelo nome dos acadêmicos.
+---
+## 📊 Pasta destinada para os modelos criados e separadps pelos sprints semanais. 📈⌛
+---
