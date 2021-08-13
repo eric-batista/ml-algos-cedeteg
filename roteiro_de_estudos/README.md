@@ -1,5 +1,8 @@
 ---
-# ROTEIRO
+# <p align = "center"> CICLO </p>
+![teste (1)](https://user-images.githubusercontent.com/62318283/129405677-adcb6e79-bd9d-4b96-a847-ddc55d937c04.png)
+---
+# <p align = "center"> ROTEIRO </p>
 
 ## **1 - Estatísica Básica**
   * 1.1 - Variáveis aleatórias contínuas e discretas
@@ -55,3 +58,11 @@ etc.)
   * 8.2 - Sintaxe de SQL
   * 8.3 - Álgebra relacional: join, group by, order by e etc. 
   * 8.4 - Chaves primárias, secundárias e estrangeiras
+
+### Fontes:
+  * GoogleAcademy
+  * Wikipedia
+  * DataCamp
+  * StackOverFlow
+  * Symbolab
+  * Python documentation
