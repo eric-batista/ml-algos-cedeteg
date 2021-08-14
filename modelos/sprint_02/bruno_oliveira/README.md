@@ -3,8 +3,7 @@
 Assim como os outros modelos lineares, o seu objetivo é reduzir a soma dos quadrados residuais. Este modelo polinomial é usado para problemas não lineares. Como estamos falando 
 de uma regressão polinomial, podemos ter n graus definidos em nosso modelo. Abaixo estão listados alguns destes graus:
 
-![image.png](attachment:image.png)
-<!-- ou este link ![types of polynomials](../Images/types-of-polynomials.png) -->
+![types of polynomials](./Images/types-of-polynomials.png) -->
 
 Para facilitar o entendimento, vamos definir alguns outros tipos de regressão linear:
 * **Regressão Linear Simples:** tem o objetivo de encontrar o relacionamento linear entre duas variáveis, sendo uma independente e a outra dependente;
@@ -14,26 +13,24 @@ Já a regressão polinomial, é usada quando não conseguimos capturar os dados 
 o grau do modelo, a performance do modelo também aumenta, porém ao fazer isso, o risco de ocorrer underfitting ou overfitting é maior. A imagem abaixo exemplifica essa diferença 
 entre os modelos de regressão: 
 
-![image-2.png](attachment:image-2.png)
-<!-- ou este link ![types of models](../Images/simple-multiple-pol-linear.jpeg) -->
+![types of models](./Images/simple-multiple-pol-linear.jpeg) -->
 
 Para se encontrar o valor de b (constante), devemos usar uma multiplicação de matriz, e quando temos múltiplas variáveis esta multiplicação ocorre da seguinte maneira:
 
-![image-3.png](attachment:image-3.png)
-<!-- ![mult matrix](../Images/mult-matrix.png) -->
+![mult matrix](./Images/mult-matrix.png) -->
 
 Um uso interessante para o modelo é por exemplo, na taxa de propagação de uma doença, ou até mesmo a taxa de propagação da pandemia pelo mundo. Isso ocorre, pois os dados não 
 ocorrem de maneira linear. E nesse exemplo, o modelo é vantajoso, pois quando usamos um modelo de grau 2, será criado uma curva quadrática, que acaba se ajustando melhor nesses 
 dados não lineares, do que uma linha linear. A imagem abaixo, mostra a comparação entre um modelo linear (ou uma regressão polinomial de primeiro grau) e um polinomial de segundo 
 grau:
 
-![comp linear x polynomial](../Images/comp-linear-x-polynomial.png)
+![comp linear x polynomial](./Images/comp-linear-x-polynomial.png)
 
 Quando falamos em uma curva quadrática, estamos definindo uma regressão polinomial de grau 2 (ordem 2), podemos usar quantos graus forem necessários, porém quanto maior o grau da 
 regressão, o modelo vai estar bem ajustado aos dados, o que não é muito interessante, pois pode ocorrer o overfitting, que é justamente o ajuste excessivo do modelo sobre os 
 dados, desta forma o modelo acaba se ajustando aos ruídos. Para ilustrar este ajuste excessivo, abaixo temos o gráfico de um modelo polinomial de ordem 20:
 
-![comp polynomial 20 degree](../Images/comp-polynomial-20-degree.png)
+![comp polynomial 20 degree](./Images/comp-polynomial-20-degree.png)
 
 Mas como podemos escolher a melhor ordem para o modelo polinomial? Para fazer isso podemos entender a relação entre o viés e a variância. Um viés (bias) alto, resulta em um 
 modelo que contém muitos erros, pois não consegue capturar a maioria dos dados (underfitting). Já uma variância alta, resulta em modelo que faz um ajuste excessivo aos dados 
