@@ -3,7 +3,7 @@
 Assim como os outros modelos lineares, o seu objetivo é reduzir a soma dos quadrados residuais. Este modelo polinomial é usado para problemas não lineares. Como estamos falando 
 de uma regressão polinomial, podemos ter n graus definidos em nosso modelo. Abaixo estão listados alguns destes graus:
 
-![types of polynomials](./Images/types-of-polynomials.png) -->
+![types of polynomials](./Images/types-of-polynomials.png)
 
 Para facilitar o entendimento, vamos definir alguns outros tipos de regressão linear:
 * **Regressão Linear Simples:** tem o objetivo de encontrar o relacionamento linear entre duas variáveis, sendo uma independente e a outra dependente;
@@ -13,11 +13,11 @@ Já a regressão polinomial, é usada quando não conseguimos capturar os dados 
 o grau do modelo, a performance do modelo também aumenta, porém ao fazer isso, o risco de ocorrer underfitting ou overfitting é maior. A imagem abaixo exemplifica essa diferença 
 entre os modelos de regressão: 
 
-![types of models](./Images/simple-multiple-pol-linear.jpeg) -->
+![types of models](./Images/simple-multiple-pol-linear.jpeg)
 
 Para se encontrar o valor de b (constante), devemos usar uma multiplicação de matriz, e quando temos múltiplas variáveis esta multiplicação ocorre da seguinte maneira:
 
-![mult matrix](./Images/mult-matrix.png) -->
+![mult matrix](./Images/mult-matrix.png)
 
 Um uso interessante para o modelo é por exemplo, na taxa de propagação de uma doença, ou até mesmo a taxa de propagação da pandemia pelo mundo. Isso ocorre, pois os dados não 
 ocorrem de maneira linear. E nesse exemplo, o modelo é vantajoso, pois quando usamos um modelo de grau 2, será criado uma curva quadrática, que acaba se ajustando melhor nesses 
