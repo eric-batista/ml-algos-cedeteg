@@ -1,3 +1,3 @@
 # Roteiro de estudos
 ---
-Descricao
+* 1.1 - Variáveis aleatórias contínuas e discretas; ✔
