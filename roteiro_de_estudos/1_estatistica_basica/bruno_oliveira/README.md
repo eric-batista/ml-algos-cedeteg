@@ -5,3 +5,4 @@
 * 1.3 - Propriedades de distribuições: médias, medianas, quartis, moda, variância, etc.; ▢
 * 1.4 - Testes de hipóteses; ▢
 * 1.5 - Principais distribuições: Normal, Bernoulli, Binomial, Uniforme, Poisson, Geométrica; ▢
+---
