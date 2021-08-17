@@ -1,4 +1,4 @@
-# Roteiro de estudos
+# 1.0 - Estatística Básica
 ---
 * 1.1 - Variáveis aleatórias contínuas e discretas; ✔
 * 1.2 - Função densidade de probabilidade e distribuição acumulada; ✔
