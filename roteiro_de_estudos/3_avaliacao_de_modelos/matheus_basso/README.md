@@ -1,5 +1,7 @@
+# Definição do Modelo
+
 ---
-# Legenda
+# Legenda para companhamento do projeto
 ✔ = Completo;
 
 ⏳ = Desenvolvendo conteúdo;
@@ -10,7 +12,7 @@
 
 ---
 
-# 3.1 - **Métricas de avaliação de modelos**
+# 3.0 - **Métricas de avaliação de modelos**
 ---
 
 Um breve exmplo de como selecionar uma métrica de avaliação (a ser atualizado no decorrer dos arquivos):
@@ -25,7 +27,8 @@ Um breve exmplo de como selecionar uma métrica de avaliação (a ser atualizado
     * TP, TN, FP e FN
     * Como calcular TPR, TNR, FPR e FNR;
   * 1.3 - Confusion Matrix para visualização.✔
-    * Como gerar e ler uma confusion matrix usando seaborn e matplotlib. 
+    * Como gerar e ler uma confusion matrix usando seaborn e matplotlib.
+    * Extra: accuracy score já está explicado dentro desse tópico 
   
 * 2 - KS (Kolgomorov Smirnov): 
   * 2.1 - Definição; ✔
