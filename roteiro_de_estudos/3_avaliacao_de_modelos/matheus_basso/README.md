@@ -33,58 +33,58 @@ Um breve exmplo de como selecionar uma métrica de avaliação (a ser atualizado
 * 2 - KS (Kolgomorov Smirnov): 
   * 2.1 - Definição; ✔
   * 2.2 - Passos para aplicação; ✔
-  * 2.3 - Código em Python da aplicação; ⏳
-  * 2.3 - Demostração gráfica e como ler; ⏳
-  * 2.4 - Como interpretar a métrica. 👁‍🗨
+  * 2.3 - Código em Python da aplicação; ✔
+  * 2.3 - Demostração gráfica e como ler; ✔
+  * 2.4 - Como interpretar a métrica. ✔
 
 * 3 - Gini: 
-  * 3.1 - Definição; 👁‍
-  * 3.2 - Passos para aplicação; 👁‍
-  * 3.3 - Código em Python da aplicação; 👁‍
-  * 3.3 - Demostração gráfica e como ler; 👁‍
-  * 3.4 - Como interpretar a métrica. 👁‍
+  * 3.1 - Definição; ✔
+  * 3.2 - Passos para aplicação; ✔
+  * 3.3 - Código em Python da aplicação; ✔
+  * 3.3 - Demostração gráfica e como ler; ✔
+  * 3.4 - Como interpretar a métrica. ✔
   
 * 4 - AUC: 
-  * 4.1 - Definição; 👁‍
-  * 4.2 - Passos para aplicação; 👁‍
-  * 4.3 - Código em Python da aplicação; 👁‍
-  * 4.3 - Demostração gráfica e como ler; 👁‍
-  * 4.4 - Como interpretar a métrica. 👁‍
+  * 4.1 - Definição; ✔
+  * 4.2 - Passos para aplicação; ✔
+  * 4.3 - Código em Python da aplicação; ✔
+  * 4.3 - Demostração gráfica e como ler; ✔
+  * 4.4 - Como interpretar a métrica. ✔
   
 * 5 - RMSE: 
-  * 5.1 - Definição; 👁‍
-  * 5.2 - Passos para aplicação; 👁‍
-  * 5.3 - Código em Python da aplicação; 👁‍
-  * 5.3 - Demostração gráfica e como ler; 👁‍
-  * 5.4 - Como interpretar a métrica. 👁‍
+  * 5.1 - Definição; ⏳
+  * 5.2 - Passos para aplicação; ⏳
+  * 5.3 - Código em Python da aplicação; ⏳
+  * 5.3 - Demostração gráfica e como ler; ⏳
+  * 5.4 - Como interpretar a métrica. ⏳
 
 * 6 - MAE: 
-  * 6.1 - Definição; 👁‍
-  * 6.2 - Passos para aplicação; 👁‍
-  * 6.3 - Código em Python da aplicação; 👁‍
-  * 6.3 - Demostração gráfica e como ler; 👁‍
-  * 6.4 - Como interpretar a métrica. 👁‍
+  * 6.1 - Definição; 🔍
+  * 6.2 - Passos para aplicação; 🔍
+  * 6.3 - Código em Python da aplicação; 🔍
+  * 6.3 - Demostração gráfica e como ler; 🔍
+  * 6.4 - Como interpretar a métrica. 🔍
 
 * 7 - F1: 
-  * 7.1 - Definição; 👁‍
-  * 7.2 - Passos para aplicação; 👁‍
-  * 7.3 - Código em Python da aplicação; 👁‍
-  * 7.3 - Demostração gráfica e como ler; 👁‍
-  * 7.4 - Como interpretar a métrica. 👁‍
+  * 7.1 - Definição; 🔍
+  * 7.2 - Passos para aplicação; 🔍
+  * 7.3 - Código em Python da aplicação; 🔍
+  * 7.3 - Demostração gráfica e como ler; 🔍
+  * 7.4 - Como interpretar a métrica. 🔍
 
 * 8 - Recall:
-  * 8.1 - Definição; 👁‍
-  * 8.2 - Passos para aplicação; 👁‍
-  * 8.3 - Código em Python da aplicação; 👁‍
-  * 8.3 - Demostração gráfica e como ler; 👁‍
-  * 8.4 - Como interpretar a métrica. 👁‍
+  * 8.1 - Definição; 🔍
+  * 8.2 - Passos para aplicação; 🔍
+  * 8.3 - Código em Python da aplicação; 🔍
+  * 8.3 - Demostração gráfica e como ler; 🔍
+  * 8.4 - Como interpretar a métrica. 🔍
 
 * 9 - Precision
-  * 9.1 - Definição; 👁‍
-  * 9.2 - Passos para aplicação; 👁‍
-  * 9.3 - Código em Python da aplicação; 👁‍
-  * 9.3 - Demostração gráfica e como ler; 👁‍
-  * 9.4 - Como interpretar a métrica. 👁‍
+  * 9.1 - Definição; 🔍
+  * 9.2 - Passos para aplicação; 🔍
+  * 9.3 - Código em Python da aplicação; 🔍
+  * 9.3 - Demostração gráfica e como ler; 🔍
+  * 9.4 - Como interpretar a métrica. 🔍
 
 * 10 - R2   
   * 10.1 - Definição; 👁‍
