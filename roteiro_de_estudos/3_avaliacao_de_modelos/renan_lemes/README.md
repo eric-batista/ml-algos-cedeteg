@@ -12,13 +12,12 @@ Um breve exmplo de como selecionar uma métrica de avaliação (a ser atualizado
 ---
 * 1 - Introdução:✔
   * 1.1 - Definição de métricas de avaliação; ✔
-    * Motivo e importância das métricas;   
-  * 1.2 - Variáveis; 
-    * TP, TN, FP e FN
-    * Como calcular TPR, TNR, FPR e FNR;
-  * 1.3 - Confusion Matrix para visualização.
-    * Como gerar e ler uma confusion matrix usando seaborn e matplotlib.
-    * Extra: accuracy score já está explicado dentro desse tópico 
+    * Motivo e importância das métricas; ✔  
+  * 1.2 - Variáveis; ✔
+    * TP, TN, FP e FN ✔
+    * Como calcular TPR, TNR, FPR e FNR; ✔
+  * 1.3 - Confusion Matrix para visualização. ✔
+    * Como gerar e ler uma confusion matrix usando seaborn e matplotlib. ✔
   
 * 2 - KS (Kolgomorov Smirnov): 
   * 2.1 - Definição; 
