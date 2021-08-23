@@ -52,46 +52,46 @@ Um breve exmplo de como selecionar uma métrica de avaliação (a ser atualizado
   * 4.4 - Como interpretar a métrica. ✔
   
 * 5 - RMSE: 
-  * 5.1 - Definição; ⏳
-  * 5.2 - Passos para aplicação; ⏳
-  * 5.3 - Código em Python da aplicação; ⏳
-  * 5.3 - Demostração gráfica e como ler; ⏳
-  * 5.4 - Como interpretar a métrica. ⏳
+  * 5.1 - Definição; ✔
+  * 5.2 - Passos para aplicação; ✔
+  * 5.3 - Código em Python da aplicação; ✔
+  * 5.3 - Demostração gráfica e como ler; ✔
+  * 5.4 - Como interpretar a métrica. ✔
 
 * 6 - MAE: 
-  * 6.1 - Definição; 🔍
-  * 6.2 - Passos para aplicação; 🔍
-  * 6.3 - Código em Python da aplicação; 🔍
-  * 6.3 - Demostração gráfica e como ler; 🔍
-  * 6.4 - Como interpretar a métrica. 🔍
+  * 6.1 - Definição; ✔
+  * 6.2 - Passos para aplicação; ✔
+  * 6.3 - Código em Python da aplicação; ✔
+  * 6.3 - Demostração gráfica e como ler; ✔
+  * 6.4 - Como interpretar a métrica. ✔
 
 * 7 - F1: 
-  * 7.1 - Definição; 🔍
-  * 7.2 - Passos para aplicação; 🔍
-  * 7.3 - Código em Python da aplicação; 🔍
-  * 7.3 - Demostração gráfica e como ler; 🔍
-  * 7.4 - Como interpretar a métrica. 🔍
+  * 7.1 - Definição; ✔
+  * 7.2 - Passos para aplicação; ⏳
+  * 7.3 - Código em Python da aplicação; ⏳
+  * 7.3 - Demostração gráfica e como ler; ⏳
+  * 7.4 - Como interpretar a métrica. ⏳
 
 * 8 - Recall:
-  * 8.1 - Definição; 🔍
-  * 8.2 - Passos para aplicação; 🔍
-  * 8.3 - Código em Python da aplicação; 🔍
-  * 8.3 - Demostração gráfica e como ler; 🔍
-  * 8.4 - Como interpretar a métrica. 🔍
+  * 8.1 - Definição; ⏳
+  * 8.2 - Passos para aplicação; ⏳
+  * 8.3 - Código em Python da aplicação; ⏳
+  * 8.3 - Demostração gráfica e como ler; ⏳
+  * 8.4 - Como interpretar a métrica. ⏳
 
 * 9 - Precision
-  * 9.1 - Definição; 🔍
-  * 9.2 - Passos para aplicação; 🔍
-  * 9.3 - Código em Python da aplicação; 🔍
-  * 9.3 - Demostração gráfica e como ler; 🔍
+  * 9.1 - Definição; ⏳
+  * 9.2 - Passos para aplicação; ⏳
+  * 9.3 - Código em Python da aplicação; ⏳
+  * 9.3 - Demostração gráfica e como ler; ⏳
   * 9.4 - Como interpretar a métrica. 🔍
 
 * 10 - R2   
-  * 10.1 - Definição; 👁‍
-  * 10.2 - Passos para aplicação; 👁‍
-  * 10.3 - Código em Python da aplicação; 👁‍
-  * 10.3 - Demostração gráfica e como ler; 👁‍
-  * 10.4 - Como interpretar a métrica. 👁‍
+  * 10.1 - Definição; ⏳
+  * 10.2 - Passos para aplicação; ⏳
+  * 10.3 - Código em Python da aplicação; ⏳
+  * 10.3 - Demostração gráfica e como ler; ⏳
+  * 10.4 - Como interpretar a métrica. ⏳
 
 3.2 - Validações holdout (prévia, não levar em consideração esse modelo de apresentação) 
 * leave one out:
