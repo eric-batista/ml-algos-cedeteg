@@ -1,7 +1,7 @@
 # 3.0 - Avaliação de Modelos
 ---
 
-* 3.1 - Métricas de avalição de modelo: 
+* 3.1 - Métricas de avaliação de modelo: 
   * 3.1.1  - Introdução; 🔳
   * 3.1.2  - KS; 🔳
   * 3.1.3  - Gini; 🔳
