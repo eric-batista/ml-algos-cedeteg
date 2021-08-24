@@ -89,19 +89,22 @@ Um breve exmplo de como selecionar uma métrica de avaliação (a ser atualizado
   * 10.3 - Código em Python da aplicação; ✔
   * 10.4 - Como interpretar a métrica. ✔
 
-3.2 - Validações  (prévia, não levar em consideração esse modelo de apresentação) 
+3.2 - Métodos de partição dos dados 
+* Validações
+  * Definição; ⏳
+  * Aplicação; ⏳
 * holdout
-  * Definição; 👁‍
-  * Aplicação; 👁‍ 
+  * Definição; ⏳
+  * Aplicação; ⏳ 
 * leave one out:
-  * Definição; 👁‍
-  * Aplicação; 👁‍
+  * Definição; ⏳
+  * Aplicação; ⏳
 * k-fold: 
-  * Definição; 👁‍
-  * Aplicação; 👁‍
+  * Definição; ⏳
+  * Aplicação; ⏳
 * out of sample:
-  * Definição; 👁‍
-  * Aplicação; 👁‍
+  * Definição; ⏳
+  * Aplicação; ⏳
 * out of time:
-  * Definição; 👁‍
-  * Aplicação; 👁‍
+  * Definição; ⏳
+  * Aplicação; ⏳
