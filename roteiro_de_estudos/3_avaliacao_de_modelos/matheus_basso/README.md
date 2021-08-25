@@ -91,20 +91,19 @@ Um breve exmplo de como selecionar uma métrica de avaliação (a ser atualizado
 
 3.2 - Métodos de partição dos dados 
 * Validações
-  * Definição; ⏳
-  * Aplicação; ⏳
+  * Definição; ✔
+  * Aplicação; ✔
 * holdout
-  * Definição; ⏳
-  * Aplicação; ⏳ 
+  * Definição; ✔
+  * Aplicação; ✔ 
 * leave one out:
-  * Definição; ⏳
-  * Aplicação; ⏳
+  * Definição; ✔
+  * Aplicação; ✔
 * k-fold: 
-  * Definição; ⏳
-  * Aplicação; ⏳
+  * Definição; ✔
+  * Aplicação; ✔
 * out of sample:
-  * Definição; ⏳
-  * Aplicação; ⏳
+  * Muito simples, os dados que não estão sendo usados para testar o modelo
 * out of time:
   * Definição; ⏳
   * Aplicação; ⏳
