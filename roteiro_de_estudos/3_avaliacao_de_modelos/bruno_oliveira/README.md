@@ -2,7 +2,7 @@
 ---
 
 ## 3.1 - Métricas de avaliação de modelo:
-* #### 3.1.1 - Introdução; ✔
+* ### 3.1.1 - Introdução; ✔
  
  ### Modelos de Classificação: 
   * 3.1.2  - Accuracy; ✔
@@ -18,7 +18,7 @@
  * 3.1.10 - MAE; ✔
  * 3.1.11 - RMSE; ✔
 
-* #### 3.1.12 - Conclusão; ✔
+* ### 3.1.12 - Conclusão; ✔
 
 ---
 
