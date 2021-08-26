@@ -84,14 +84,14 @@ Um breve exmplo de como selecionar uma métrica de avaliação (a ser atualizado
 
 3.2 - Validações holdout (prévia, não levar em consideração esse modelo de apresentação) 
 * leave one out:
-  * Definição;
-  * Aplicação;
+  * Definição;✔
+  * Aplicação;✔
 * k-fold: 
-  * Definição;
-  * Aplicação;
+  * Definição;✔
+  * Aplicação;✔
 * out of sample:
-  * Definição;
-  * Aplicação;
+  * Definição;✔
+  * Aplicação;✔
 * out of time:
-  * Definição;
-  * Aplicação;
+  * Definição;✔
+  * Aplicação;✔
