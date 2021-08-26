@@ -4,7 +4,7 @@
 ## 3.1 - Métricas de avaliação de modelo:
  * 3.1.1 - Introdução; ✔
  
- * Modelos de Classificação: 
+ ### Modelos de Classificação: 
   * 3.1.2  - Accuracy; ✔
   * 3.1.3  - Precision; ✔
   * 3.1.4  - Recall; ✔
@@ -13,7 +13,7 @@
   * 3.1.7  - Gini; ✔
   * 3.1.8  - KS; ✔
  
- * Modelos de Regressão: 
+ ### Modelos de Regressão: 
   * 3.1.9  - R2 ✔
   * 3.1.10 - MAE; ✔
   * 3.1.11 - RMSE; ✔
