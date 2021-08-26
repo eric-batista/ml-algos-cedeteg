@@ -2,7 +2,7 @@
 ---
 
 ## 3.1 - Métricas de avaliação de modelo:
-#### * 3.1.1 - Introdução; ✔
+* #### 3.1.1 - Introdução; ✔
  
  ### Modelos de Classificação: 
   * 3.1.2  - Accuracy; ✔
