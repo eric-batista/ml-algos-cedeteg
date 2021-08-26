@@ -1,7 +1,7 @@
 # 3.0 - Avaliação de Modelos
 ---
 
-* 3.1 - Métricas de avaliação de modelo:
+## 3.1 - Métricas de avaliação de modelo:
  * 3.1.1 - Introdução; ✔
  
  * Modelos de Classificação: 
@@ -21,7 +21,7 @@
 
 ---
 
-* 3.2 - Validações holdout:
+## 3.2 - Validações holdout:
   * 3.2.1 - leave one out; 🔳
   * 3.2.2 - k-fold; 🔳
   * 3.2.3 - out of sample; 🔳 
