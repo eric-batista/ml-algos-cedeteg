@@ -6,5 +6,5 @@
 * 5.4 - Regressão logística ✔
 * 5.5 - KNN ✔
 * 5.6 - Naive bayes (Gaussiano x Bernouli) ✔
-* 5.7 - Redes Neurais 🔳
-* 5.8 - SVM 🔳
+* 5.7 - Redes Neurais ✔
+* 5.8 - SVM ✔
