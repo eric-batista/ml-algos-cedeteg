@@ -1,4 +1,4 @@
-# Regressão.
+# Regressão Linear.
 
 ---
 
