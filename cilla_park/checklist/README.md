@@ -1,6 +1,6 @@
 # TÓPICOS FALTANTES
 
-- [ ] Formato de apresentação;
+- [x] Formato de apresentação;
 - [ ] Conteúdo de apresentação;
 - [ ] Roteiro de apresentação;
 - [ ] Práticas e projeto;
