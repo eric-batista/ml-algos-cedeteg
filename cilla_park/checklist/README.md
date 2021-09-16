@@ -4,3 +4,6 @@
 - [ ] Conteúdo de apresentação;
 - [ ] Roteiro de apresentação;
 - [ ] Práticas e projeto;
+- [ ] Tema central;
+- [ ] Propósito;
+- [ ] Qualificação.
