@@ -1,6 +1,7 @@
 ---
 # <p align = "center"> CILLA PARK</p>
-![img](https://ibb.co/vkN9FTC)
+![Diagrama de conteúdos Cilla](https://user-images.githubusercontent.com/73296565/133661733-cf2d8bec-2a00-4356-88d9-b185397ad8f4.png)
+
 ---
 
 # <p align = "center">ROTEIRO</p>
