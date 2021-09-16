@@ -1,6 +1,8 @@
 ---
 # <p align = "center"> CILLA PARK</p>
-![Diagrama de conteúdos Cilla](https://user-images.githubusercontent.com/73296565/133661733-cf2d8bec-2a00-4356-88d9-b185397ad8f4.png)
+<p align="center">
+ <img src="https://user-images.githubusercontent.com/73296565/133662555-0818a9e6-f99a-4f18-882d-0ffeda3790d8.png"></img>
+</p>
 
 ---
 
