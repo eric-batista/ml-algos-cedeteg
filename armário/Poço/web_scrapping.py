@@ -5,12 +5,15 @@ def iee_b3():
     import time # usado para gerar um tempo de espera enquanto se utiliza o selenium
     from bs4 import BeautifulSoup # manipular o html
     import pandas as pd # criar a DF que será trabalhada
+    from selenium.webdriver.chrome.options import Options
     
     # definindo a url da b3
     url = "https://sistemaswebb3-listados.b3.com.br/indexPage/day/IEEX?language=pt-br"
     
     # iniciando o webdriver, que deve estar com o driver na pasta do arquivo para funcionar, nesse caso será utilizado do Chrome
-    browser = webdriver.Chrome()
+    chrome_options = Options()
+    chrome_options.add_argument("--headless")
+    browser = webdriver.Chrome(options=chrome_options)
     
     # Entrando na url informada
     browser.get(url)
@@ -80,13 +83,15 @@ def import_ibov():
     import time # usado para gerar um tempo de espera enquanto se utiliza o selenium
     from bs4 import BeautifulSoup # manipular o html
     import pandas as pd # criar a DF que será trabalhada
-    
+    from selenium.webdriver.chrome.options import Options
+
     # definindo a url da b3
     url = "https://sistemaswebb3-listados.b3.com.br/indexPage/day/IBOV?language=pt-br"
     
     # iniciando o webdriver, que deve estar com o driver na pasta do arquivo para funcionar, nesse caso será utilizado do Chrome
-    browser = webdriver.Chrome()
-    
+    chrome_options = Options()
+    chrome_options.add_argument("--headless")
+    browser = webdriver.Chrome(options=chrome_options)    
     # Entrando na url informada
     browser.get(url)
     
@@ -161,8 +166,8 @@ def import_ibov():
     # fim
     return df
 
-def import_ind(acao):
-    """Acao será o nome da ação, deverá ser passada em formato de srt(entre ""). Devolverá um dataframe dos indicadores."""
+def import_ibov(acao):
+    """Acao será o nome da ação, deverá ser passada em formato de srt(entre ""). Serão devolvidos dois DataFrames, o primeiro sendo todos os indicadores e o segundo contendo alguns indicadores chaves da empresa"""
 
     #Importando bibliotecas necessárias
     from selenium import webdriver # Usado para importar os dados da url
@@ -170,12 +175,17 @@ def import_ind(acao):
     from bs4 import BeautifulSoup # manipular o html
     import pandas as pd # criar a DF que será trabalhada
     from datetime import date # extrair ano atual
+    import warnings
+    warnings.filterwarnings("ignore")
+
     # ------------------------------------------------------------------------------------------------------------------------------------------------ #
     # Definindo a url que será usada no web scrapping
+    acao = 'Vale3'
     url = f"https://statusinvest.com.br/acoes/{acao.lower()}"
 
     # ------------------------------------------------------------------------------------------------------------------------------------------------ #
     # Iniciando o webdriver (o qual deve estar configurado no computador)
+
     browser = webdriver.Chrome()
 
     # ------------------------------------------------------------------------------------------------------------------------------------------------ #
@@ -184,7 +194,7 @@ def import_ind(acao):
 
     # ------------------------------------------------------------------------------------------------------------------------------------------------ #
     # Aguardando 2 segundos para a página ser carregada
-    time.sleep(2)
+    time.sleep(3)
 
     # ------------------------------------------------------------------------------------------------------------------------------------------------ #
     # Encontrando o elemento no xpath para podermos mudar seu valor e podermos selecionar o filtro para podermos ter acesso a informações mais completas
@@ -204,6 +214,7 @@ def import_ind(acao):
 
     # ------------------------------------------------------------------------------------------------------------------------------------------------ #
     # Como feito anteriormente aqui usamos um for loop para validarmos que será selecionada a opção do xpath
+
     for i in element: i.click()
 
     # ------------------------------------------------------------------------------------------------------------------------------------------------ #
@@ -213,6 +224,7 @@ def import_ind(acao):
     # ------------------------------------------------------------------------------------------------------------------------------------------------ #
     # Agora extraímos toda a url e salvamos ela na variável 'html'
     html = browser.page_source
+    browser.get_screenshot_as_file("screenshot.png")
 
     # ------------------------------------------------------------------------------------------------------------------------------------------------ #
     # Fechando o navegador
@@ -221,6 +233,8 @@ def import_ind(acao):
     # ------------------------------------------------------------------------------------------------------------------------------------------------ #
     # Usando o beatiful soup e convertendo o arquivo para podermos selecionar os dados que precisamos
     bs = BeautifulSoup(html, 'html.parser')
+
+
 
     # ------------------------------------------------------------------------------------------------------------------------------------------------ #
     # Usando a função find_all do BeatifulSoup para encontrarmos todos os valores dentro do div na classe que precisamos,
@@ -353,28 +367,53 @@ def import_ind(acao):
             _b += 1      
         break 
     # ------------------------------------------------------------------------------------------------------------------------------------------------ #
-    
+
     for i in max(cols_table.values()): obj[f'{i}'].append([acao.upper()])
-    
+
     # ------------------------------------------------------------------------------------------------------------------------------------------------ #
     # Definindo nome dos indicadores
     indicadores = ['DY', 'PL','PEG_RATIO', 'P_PV', 'EV_EBITIDA', 'EV_EBIT', 'P_EBITIDA', 'P_EBIT',
           'VPA', 'P_ATIVO', 'LPA', 'S_SR', 'P_CAP_GIRO', 'P_ATIVO_CIRC_LIQ', 'DIV_LIQUIDA_PL',
           'DIV_LIQUIDA_EBITIDA', 'DIV_LIQUIDA_EBIT', 'PL_ATIVOS', 'PASSIVOS_ATIVOS', 'LIQ_CORRENTE',
           'M_BRUTA', 'M_EBITIDA', 'M_EBIT', 'M_LIQUIDA', 'ROE', 'ROA', 'ROIC', 'GIRO_ATIVOS',
-          'CAGR_RECEITAS_5_ANOS', 'CAGR_LUCROS_5_ANOS', 'Acao']
+          'CAGR_RECEITAS_5_ANOS', 'CAGR_LUCROS_5_ANOS']
 
     # ------------------------------------------------------------------------------------------------------------------------------------------------ #
     # Criando um dicionário com os indicadores
     ind = {'indicadores':indicadores}
 
     # Usando a função update na variável ind para criarmos um dicionário com as informações
-    ind.update({ f'{i}':obj[f'{i}'][0] + obj[f'{i}'][1] + obj[f'{i}'][2] + obj[f'{i}'][3] + obj[f'{i}'][4] + obj[f'{i}'][5] for i in max(cols_table.values())})
+    ind.update({ f'{i}':obj[f'{i}'][0] + obj[f'{i}'][1] + obj[f'{i}'][2] + obj[f'{i}'][3] + obj[f'{i}'][4] for i in max(cols_table.values())})
         # Usamos um for loop dentro do update para indexarmos os valores no dicionário iterando nas colunas
 
     # ------------------------------------------------------------------------------------------------------------------------------------------------ #
     # Criando o dataframe    
     df = pd.DataFrame(ind) 
     # ------------------------------------------------------------------------------------------------------------------------------------------------ #
-    #Retorna o df acima
-    return df
+    # Retorna outros indicadores em um novo DF
+    
+    # Criando uma lista para anexarmos os valores
+    res = []
+    
+    # Iterando na lista para termos somente os valores em formato de texto
+    for i in bs.find_all('strong', class_='value'): res.append(i.text)
+    
+    # Criando uma lista com os indicadores
+    ind_2 = ['patrimonio_liquido', 'ativos', 'ativo_circulante', 'divida_bruta', 'disponibilidade', 'divida_liquida', 'valor_de_mercado', 'valor_de_firma', 'n_total_de_papeis', 'segmento_de_listagem', 'free_float']
+    
+    # Iterando na lista para anexar os valores nos indicadores apropriados
+    while True:
+        x = 0
+        obj_2 = {}
+        while x < len(ind_2):
+            obj_2[ind_2[x]] = res[res.index('\n\n\n()\n\n')+1+x:res.index('\n\n\n()\n\n')+2+x]
+            # acima usa-se a funação index() para identificarmos em qual posição está o elemento ('\n\n\n()\n\n') na lista,
+            # pois o que o segue será o valor que buscamos.
+            x += 1
+        break
+
+    # Transformamos a lista em um DF
+    df_2 = pd.DataFrame(dict_)    
+    
+    # Retorna os DFs
+    return df, df_2
