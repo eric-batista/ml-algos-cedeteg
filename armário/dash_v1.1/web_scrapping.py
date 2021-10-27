@@ -166,7 +166,7 @@ def import_ibov():
     # fim
     return df
 
-def import_ibov(acao):
+def import_ind(acao):
     """Acao será o nome da ação, deverá ser passada em formato de srt(entre ""). Serão devolvidos dois DataFrames, o primeiro sendo todos os indicadores e o segundo contendo alguns indicadores chaves da empresa"""
 
     #Importando bibliotecas necessárias
