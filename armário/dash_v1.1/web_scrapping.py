@@ -412,7 +412,7 @@ def import_ind(acao):
         break
 
     # Transformamos a lista em um DF
-    df_2 = pd.DataFrame(dict_)    
+    df_2 = pd.DataFrame(obj_2)    
     
     # Retorna os DFs
     return df, df_2
